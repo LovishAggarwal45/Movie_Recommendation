@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+streamlit
+pyarrow
+numpy
+pandas
+requests
+sklearn
+pickle
