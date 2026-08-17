@@ -29,19 +29,23 @@ The system analyzes movie information, calculates similarity between movies, and
 
 🔄 How It Works
 
+<pre>
 Movie Dataset
-     ↓
-Data Preprocessing
-     ↓
+      ↓
+Data Cleaning & Preprocessing
+      ↓
 Feature Extraction
-     ↓
+      ↓
 Text Vectorization
-     ↓
-Similarity Calculation
-     ↓
-Movie Recommendations
-     ↓
+      ↓
+Cosine Similarity
+      ↓
+Find Similar Movies
+      ↓
+Top Movie Recommendations
+      ↓
 Streamlit Web App
+</pre>
 
 🧠 Recommendation Approach
 
