@@ -54,7 +54,6 @@ The system returns a list of recommended movies based on these similarity scores
 📂 Project Structure
 
 Movie_Recommendation/
-│
 ├── .devcontainer/
 ├── .gitattributes
 ├── Data.csv
