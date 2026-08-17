@@ -67,21 +67,49 @@ Movie_Recommendation/
 ├── streamlit_app.py
 ├── vectorizer.pkl
 └── README.md
-</pre>📄 File Description
+</pre>
 
-File| Description
-"movie_recommend.ipynb"| Data analysis, preprocessing and recommendation model development
-"Data.csv"| Movie dataset used for the project
-"X.pkl"| Stored processed feature data
-"df.pickle"| Stored processed movie DataFrame
-"indices.pkl"| Stored movie index mappings
-"vectorizer.pkl"| Saved text vectorizer
-"app.py"| Application/backend logic
-"streamlit_app.py"| Streamlit web application
-"requirements.txt"| Required Python dependencies
-".devcontainer/"| Development container configuration
-".gitattributes"| Git configuration file
+📄 File Description
 
+<table>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr><tr>
+<td><code>movie_recommend.ipynb</code></td>
+<td>Data analysis, preprocessing and recommendation model development</td>
+</tr><tr>
+<td><code>Data.csv</code></td>
+<td>Movie dataset used for the project</td>
+</tr><tr>
+<td><code>X.pkl</code></td>
+<td>Stored processed feature data</td>
+</tr><tr>
+<td><code>df.pickle</code></td>
+<td>Stored processed movie DataFrame</td>
+</tr><tr>
+<td><code>indices.pkl</code></td>
+<td>Stored movie index mappings</td>
+</tr><tr>
+<td><code>vectorizer.pkl</code></td>
+<td>Saved text vectorizer</td>
+</tr><tr>
+<td><code>app.py</code></td>
+<td>Application/backend logic</td>
+</tr><tr>
+<td><code>streamlit_app.py</code></td>
+<td>Streamlit web application</td>
+</tr><tr>
+<td><code>requirements.txt</code></td>
+<td>Required Python dependencies</td>
+</tr><tr>
+<td><code>.devcontainer/</code></td>
+<td>Development container configuration</td>
+</tr><tr>
+<td><code>.gitattributes</code></td>
+<td>Git configuration file</td>
+</tr>
+</table>
 📊 Recommendation Pipeline
 
 The recommendation pipeline consists of:
