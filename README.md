@@ -53,6 +53,7 @@ The system returns a list of recommended movies based on these similarity scores
 
 📂 Project Structure
 
+<pre>
 Movie_Recommendation/
 ├── .devcontainer/
 ├── .gitattributes
@@ -66,8 +67,7 @@ Movie_Recommendation/
 ├── streamlit_app.py
 ├── vectorizer.pkl
 └── README.md
-
-📄 File Description
+</pre>📄 File Description
 
 File| Description
 "movie_recommend.ipynb"| Data analysis, preprocessing and recommendation model development
