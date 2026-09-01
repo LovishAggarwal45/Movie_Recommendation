@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
 from fastapi import FastAPI
@@ -18,4 +19,26 @@ def recommend(movie:str, n:int=5):
         sim_score=cosine_similarity(X[idx],X).flatten()
         sim_score[idx] = -1
         sim=sim_score.argsort()[::-1][1:n+1]
+=======
+import pickle
+from sklearn.metrics.pairwise import cosine_similarity
+from fastapi import FastAPI
+
+vectorizer=pickle.load(open('vectorizer.pkl','rb'))
+X=pickle.load(open('X.pkl','rb'))
+indices=pickle.load(open('indices.pkl','rb'))
+df=pickle.load(open('df.pickle','rb'))
+
+app=FastAPI()
+
+@app.get("/recommend/{movie}")
+def recommend(movie:str, n:int=5):
+    if movie not in df['Movie Name'].values:
+        return {"recommendations":['Movie not found in our Data!!']}
+    else:
+        idx=indices[movie]
+        sim_score=cosine_similarity(X[idx],X).flatten()
+        sim_score[idx] = -1
+        sim=sim_score.argsort()[::-1][1:n+1]
+>>>>>>> 94d9ab3daae1e60a5c27f085d00b1b9aee3c382c
         return {"recommendations":df['Movie Name'].iloc[sim].tolist()}
