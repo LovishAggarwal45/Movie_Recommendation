@@ -30,7 +30,7 @@ n = st.slider(label="Select number of recommendations:",min_value=1,max_value=10
 
 if st.button("Recommend"):
     movie_searched=selected_movie if selected_movie!="" else movie
-    response = requests.get(f"http://127.0.0.1:8000/recommend/{movie_searched}?n={n}")
+    response = requests.get(f"https://movie-recommendation-96j4.onrender.com/recommend/{movie_searched}?n={n}")
 
     if response.status_code == 200:
         data = response.json()
